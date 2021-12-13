@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Tests" verbose="5" parallel="tests">
+  <test name="TestChrome">
+      <parameter name = "browser" value = "chrome"></parameter>
+    <classes>
+      <class name="atstGrid.SampleTestNgTestSearchKeyword">
+        <!--methods>
+          <include name="searching_by_keyword_apple_should_display_the_corresponding_article" />
+        </methods-->
+      </class>
+    </classes>
+  </test>
+  <test name="TestEdge">
+    <parameter name = "browser" value = "edge"></parameter>
+    <classes>
+      <class name="atstGrid.SampleTestNgTestSearchKeyword">
+        <!--methods>
+          <include name="searching_by_keyword_banana_should_display_the_corresponding_article" />
+        </methods-->
+      </class>
+    </classes>
+  </test>
+</suite>
